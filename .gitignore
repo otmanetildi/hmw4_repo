@@ -1,0 +1,22 @@
+# Compiled output / build folders
+target/
+build/
+out/
+
+# Java bytecode
+*.class
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
