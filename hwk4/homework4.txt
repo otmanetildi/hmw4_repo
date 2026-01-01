@@ -236,3 +236,25 @@ Your branch is up to date with 'origin/main'.
 Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
 $ ls hmk1
 ls: cannot access 'hmk1': No such file or directory
+
+STEP G:
+git switch main
+git merge feature-1
+hint: WaitinMerge made by the 'ort' strategy.le...
+ hmk1/PrintRange.java | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+ create mode 100644 hmk1/PrintRange.java
+
+git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 285 bytes | 10.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+To https://github.com/Otmanetildi/hmw4_repo.git
+   86a147d..739c922  main -> main
+
