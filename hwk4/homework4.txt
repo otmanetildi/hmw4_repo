@@ -504,3 +504,842 @@ remote: This repository moved. Please use the new location:
 remote:   https://github.com/otmanetildi/hmw4_repo.git
 To https://github.com/Otmanetildi/hmw4_repo.git
    2684818..071c009  main -> main
+
+
+STEP M:
+
+
+git diff main feature-1
+
+diff --git a/hmk1/PrintRange.java b/hmk1/PrintRange.java
+index 0abe9e1..8ecb72e 100644
+--- a/hmk1/PrintRange.java
++++ b/hmk1/PrintRange.java
+@@ -13,19 +13,14 @@ public class PrintRange {
+         int b = scanner.nextInt();
+ 
+         if (a < b) {
+-    		for (int i = a + 1; i < b; i++) {
+-        		if (i % 2 == 0) {
+-            			System.out.println(i);
+-       			}
+-    		}
+-	} else {
+-    		for (int i = b + 1; i < a; i++) {
+-        		if (i % 2 == 0) {
+-            			System.out.println(i);
+-        		}
+-    		}
+-	}
+-
++            for (int i = a + 1; i < b; i++) {
++                System.out.println(i);
++            }
++        } else {
++            for (int i = b + 1; i < a; i++) {
++                System.out.println(i);
++            }
++        }
+ 
+         scanner.close();
+ 
+diff --git a/hwk4/homework4.txt b/hwk4/homework4.txt
+index 5d9f048..00e5295 100644
+--- a/hwk4/homework4.txt
++++ b/hwk4/homework4.txt
+@@ -149,358 +149,3 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+ remote: This repository moved. Please use the new location:
+ remote:   https://github.com/otmanetildi/hmw4_repo.git
+ To https://github.com/Otmanetildi/hmw4_repo.git
+-
+-STEP E:
+-
+-git branch feature-1
+-git switch feature-1
+-
+-git branch
+-* feature-1
+-  main
+-
+-mkdir hmk1
+-cd hmk1
+-
+-pwd
+-/c/Users/fujitsu lifebook/Desktop/hmw4_repo/hmk1
+-
+-ls
+-
+-
+-STEP F:
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$  mv "/c/Users/fujitsu lifebook/Desktop/PrintRange.java" hmk1/
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ ls hmk1
+-PrintRange.java
+-
+-git status
+-On branch feature-1
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hwk4/homework4.txt
+-
+-Untracked files:
+-  (use "git add <file>..." to include in what will be committed)
+-        hmk1/
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ git add hmk1
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ git commit -m "satisfying requirement one"
+-[feature-1 4ea81e0] satisfying requirement one
+- 1 file changed, 29 insertions(+)
+- create mode 100644 hmk1/PrintRange.java
+- git push --set-upstream origin feature-1
+-Enumerating objects: 5, done.
+-Counting objects: 100% (5/5), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 655 bytes | 327.00 KiB/s, done.
+-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-1' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-1
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-1 -> feature-1
+-branch 'feature-1' set up to track 'origin/feature-1'.
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ git log --oneline
+-4ea81e0 (HEAD -> feature-1, origin/feature-1) satisfying requirement one
+-a2dac8c (origin/main, origin/HEAD, main) Complete step D
+-a3851e6 setting up gitignore
+-d734ab9 Complete Step C
+-f7d75a9 Add steps A and B
+-1a81e83 Create homework4.txt
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ ls hmk1
+-PrintRange.java
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+-$ git switch main
+-M       hwk4/homework4.txt
+-Switched to branch 'main'
+-Your branch is up to date with 'origin/main'.
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
+-$ ls hmk1
+-ls: cannot access 'hmk1': No such file or directory
+-
+-STEP G:
+-git switch main
+-git merge feature-1
+-hint: WaitinMerge made by the 'ort' strategy.le...
+- hmk1/PrintRange.java | 29 +++++++++++++++++++++++++++++
+- 1 file changed, 29 insertions(+)
+- create mode 100644 hmk1/PrintRange.java
+-
+-git push
+-Enumerating objects: 4, done.
+-Counting objects: 100% (4/4), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (2/2), done.
+-Writing objects: 100% (2/2), 285 bytes | 10.00 KiB/s, done.
+-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   86a147d..739c922  main -> main
+-
+-
+-STEP H:
+-
+-git switch main
+-Already on 'main'
+-Your branch is up to date with 'origin/main'.
+-
+- git pull
+-Already up to date.
+-
+- git branch feature-2
+-
+- git branch
+-  feature-1
+-  feature-2
+-* main
+-
+-
+-STEP I:
+-
+-git switch main
+-
+-git branch feature-3
+-
+-git branch
+-  feature-1
+-  feature-2
+-  feature-3
+-* main
+-
+-
+-git push -u origin feature-2
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-2' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-2
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-2 -> feature-2
+-branch 'feature-2' set up to track 'origin/feature-2'.
+-
+-git push -u origin feature-3
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-3' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-3
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-3 -> feature-3
+-branch 'feature-3' set up to track 'origin/feature-3'.
+-
+-STEP J:
+-
+-git switch feature-2
+-Switched to branch 'feature-2'
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-2)
+-$ git status
+-On branch feature-2
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "satisfying requirement change two"
+-[feature-2 151efee] satisfying requirement change two
+- 1 file changed, 3 insertions(+), 1 deletion(-)
+-
+-git push -u origin feature-2
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 476 bytes | 238.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   be302bb..151efee  feature-2 -> feature-2
+-branch 'feature-2' set up to track 'origin/feature-2'.
+-
+-git log --oneline
+-151efee (HEAD -> feature-2, origin/feature-2) satisfying requirement change two
+-be302bb Step G complete
+-739c922 Merge branch 'feature-1'
+-86a147d Answer Step F question
+-4ea81e0 (origin/feature-1, feature-1) satisfying requirement one
+-a2dac8c Complete step D
+-a3851e6 setting up gitignore
+-d734ab9 Complete Step C
+-f7d75a9 Add steps A and B
+-1a81e83 Create homework4.txt
+-
+-(Additional fix on feature-2 to fix code logic)
+-
+-git status
+-On branch feature-2
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "Fix odd number logic "
+-[feature-2 0b4326d] Fix odd number logic
+- 1 file changed, 3 insertions(+), 1 deletion(-)
+-
+-git push
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 451 bytes | 225.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   b98bb84..0b4326d  feature-2 -> feature-2
+-
+-git log --oneline
+-0b4326d (HEAD -> feature-2, origin/feature-2) Fix odd number logic
+-b98bb84 Step J complete
+-151efee satisfying requirement change two
+-be302bb Step G complete
+-739c922 Merge branch 'feature-1'
+-86a147d Answer Step F question
+-4ea81e0 (origin/feature-1, feature-1) satisfying requirement one
+-a2dac8c Complete step D
+-a3851e6 setting up gitignore
+-d734ab9 Complete Step C
+-f7d75a9 Add steps A and B
+-1a81e83 Create homework4.txt
+-
+-STEP L:
+-
+-git switch main
+-
+-git merge feature-2
+-[main d20ffe1] Merge branch 'feature-2'
+-hint: Waiting for your editor to close the file...
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 914 bytes | 914.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   f17e6ab..d20ffe1  main -> main
+-
+-git status
+-On branch main
+-Your branch is up to date with 'origin/main'.
+-
+-nothing to commit, working tree clean
+-
+-
+-STEP K:
+-
+-git switch feature-3
+-Switched to branch 'feature-3'
+-Your branch is up to date with 'origin/feature-3'.
+-
+-git status
+-On branch feature-3
+-Your branch is up to date with 'origin/feature-3'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "satisfying requirement change three"
+-[feature-3 068cfba] satisfying requirement change three
+- 1 file changed, 13 insertions(+), 8 deletions(-)
+-
+-git push --set-upstream origin feature-3
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 510 bytes | 255.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   7c56622..068cfba  feature-3 -> feature-3
+-branch 'feature-3' set up to track 'origin/feature-3'.
+-
+-STEP M:
+-
+-git merge feature-3
+-Auto-merging hmk1/PrintRange.java
+-CONFLICT (content): Merge conflict in hmk1/PrintRange.java
+-Auto-merging hwk4/homework4.txt
+-CONFLICT (content): Merge conflict in hwk4/homework4.txt
+-Automatic merge failed; fix conflicts and then commit the result.
+-
+- nano hmk1/PrintRange.java
+-
+-nano hwk4/homework4.txt
+-
+-git add hmk1/PrintRange.java hwk4/homework4.txt
+-
+-git commit
+-hint: Waitin[main 071c009] Merge branch 'feature-3'
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 591 bytes | 591.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   2684818..071c009  main -> main
+
+
+git diff main feature-2
+
+diff --git a/hmk1/PrintRange.java b/hmk1/PrintRange.java
+index 0abe9e1..35c027f 100644
+--- a/hmk1/PrintRange.java
++++ b/hmk1/PrintRange.java
+@@ -13,19 +13,18 @@ public class PrintRange {
+         int b = scanner.nextInt();
+ 
+         if (a < b) {
+-    		for (int i = a + 1; i < b; i++) {
+-        		if (i % 2 == 0) {
+-            			System.out.println(i);
+-       			}
++            for (int i = a + 1; i < b; i++) {
++                if (i % 2 != 0) {
++            		System.out.println(i);
++        	}
++            }
++        } else {
++            for (int i = b + 1; i < a; i++) {
++                if (i % 2 != 0) {
++        		System.out.println(i);
+     		}
+-	} else {
+-    		for (int i = b + 1; i < a; i++) {
+-        		if (i % 2 == 0) {
+-            			System.out.println(i);
+-        		}
+-    		}
+-	}
+-
++            }
++        }
+ 
+         scanner.close();
+ 
+diff --git a/hwk4/homework4.txt b/hwk4/homework4.txt
+index 5d9f048..7727a05 100644
+--- a/hwk4/homework4.txt
++++ b/hwk4/homework4.txt
+@@ -258,61 +258,6 @@ remote:   https://github.com/otmanetildi/hmw4_repo.git
+ To https://github.com/Otmanetildi/hmw4_repo.git
+    86a147d..739c922  main -> main
+ 
+-
+-STEP H:
+-
+-git switch main
+-Already on 'main'
+-Your branch is up to date with 'origin/main'.
+-
+- git pull
+-Already up to date.
+-
+- git branch feature-2
+-
+- git branch
+-  feature-1
+-  feature-2
+-* main
+-
+-
+-STEP I:
+-
+-git switch main
+-
+-git branch feature-3
+-
+-git branch
+-  feature-1
+-  feature-2
+-  feature-3
+-* main
+-
+-
+-git push -u origin feature-2
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-2' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-2
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-2 -> feature-2
+-branch 'feature-2' set up to track 'origin/feature-2'.
+-
+-git push -u origin feature-3
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-3' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-3
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-3 -> feature-3
+-branch 'feature-3' set up to track 'origin/feature-3'.
+-
+ STEP J:
+ 
+ git switch feature-2
+@@ -363,8 +308,10 @@ d734ab9 Complete Step C
+ f7d75a9 Add steps A and B
+ 1a81e83 Create homework4.txt
+ 
++
+ (Additional fix on feature-2 to fix code logic)
+ 
++
+ git status
+ On branch feature-2
+ Your branch is up to date with 'origin/feature-2'.
+@@ -408,99 +355,3 @@ a3851e6 setting up gitignore
+ d734ab9 Complete Step C
+ f7d75a9 Add steps A and B
+ 1a81e83 Create homework4.txt
+-
+-STEP L:
+-
+-git switch main
+-
+-git merge feature-2
+-[main d20ffe1] Merge branch 'feature-2'
+-hint: Waiting for your editor to close the file...
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 914 bytes | 914.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   f17e6ab..d20ffe1  main -> main
+-
+-git status
+-On branch main
+-Your branch is up to date with 'origin/main'.
+-
+-nothing to commit, working tree clean
+-
+-
+-STEP K:
+-
+-git switch feature-3
+-Switched to branch 'feature-3'
+-Your branch is up to date with 'origin/feature-3'.
+-
+-git status
+-On branch feature-3
+-Your branch is up to date with 'origin/feature-3'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "satisfying requirement change three"
+-[feature-3 068cfba] satisfying requirement change three
+- 1 file changed, 13 insertions(+), 8 deletions(-)
+-
+-git push --set-upstream origin feature-3
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 510 bytes | 255.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   7c56622..068cfba  feature-3 -> feature-3
+-branch 'feature-3' set up to track 'origin/feature-3'.
+-
+-STEP M:
+-
+-git merge feature-3
+-Auto-merging hmk1/PrintRange.java
+-CONFLICT (content): Merge conflict in hmk1/PrintRange.java
+-Auto-merging hwk4/homework4.txt
+-CONFLICT (content): Merge conflict in hwk4/homework4.txt
+-Automatic merge failed; fix conflicts and then commit the result.
+-
+- nano hmk1/PrintRange.java
+-
+-nano hwk4/homework4.txt
+-
+-git add hmk1/PrintRange.java hwk4/homework4.txt
+-
+-git commit
+-hint: Waitin[main 071c009] Merge branch 'feature-3'
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 591 bytes | 591.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   2684818..071c009  main -> main
+
+
+
+git diff main feature-3
+
+diff --git a/hwk4/homework4.txt b/hwk4/homework4.txt
+index 5d9f048..573bbd5 100644
+--- a/hwk4/homework4.txt
++++ b/hwk4/homework4.txt
+@@ -258,7 +258,6 @@ remote:   https://github.com/otmanetildi/hmw4_repo.git
+ To https://github.com/Otmanetildi/hmw4_repo.git
+    86a147d..739c922  main -> main
+ 
+-
+ STEP H:
+ 
+ git switch main
+@@ -275,168 +274,6 @@ Already up to date.
+   feature-2
+ * main
+ 
+-
+-STEP I:
+-
+-git switch main
+-
+-git branch feature-3
+-
+-git branch
+-  feature-1
+-  feature-2
+-  feature-3
+-* main
+-
+-
+-git push -u origin feature-2
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-2' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-2
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-2 -> feature-2
+-branch 'feature-2' set up to track 'origin/feature-2'.
+-
+-git push -u origin feature-3
+-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-remote:
+-remote: Create a pull request for 'feature-3' on GitHub by visiting:
+-remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-3
+-remote:
+-To https://github.com/Otmanetildi/hmw4_repo.git
+- * [new branch]      feature-3 -> feature-3
+-branch 'feature-3' set up to track 'origin/feature-3'.
+-
+-STEP J:
+-
+-git switch feature-2
+-Switched to branch 'feature-2'
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-2)
+-$ git status
+-On branch feature-2
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "satisfying requirement change two"
+-[feature-2 151efee] satisfying requirement change two
+- 1 file changed, 3 insertions(+), 1 deletion(-)
+-
+-git push -u origin feature-2
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 476 bytes | 238.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   be302bb..151efee  feature-2 -> feature-2
+-branch 'feature-2' set up to track 'origin/feature-2'.
+-
+-git log --oneline
+-151efee (HEAD -> feature-2, origin/feature-2) satisfying requirement change two
+-be302bb Step G complete
+-739c922 Merge branch 'feature-1'
+-86a147d Answer Step F question
+-4ea81e0 (origin/feature-1, feature-1) satisfying requirement one
+-a2dac8c Complete step D
+-a3851e6 setting up gitignore
+-d734ab9 Complete Step C
+-f7d75a9 Add steps A and B
+-1a81e83 Create homework4.txt
+-
+-(Additional fix on feature-2 to fix code logic)
+-
+-git status
+-On branch feature-2
+-Your branch is up to date with 'origin/feature-2'.
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   hmk1/PrintRange.java
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+-
+-git add hmk1/PrintRange.java
+-
+-git commit -m "Fix odd number logic "
+-[feature-2 0b4326d] Fix odd number logic
+- 1 file changed, 3 insertions(+), 1 deletion(-)
+-
+-git push
+-Enumerating objects: 7, done.
+-Counting objects: 100% (7/7), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 451 bytes | 225.00 KiB/s, done.
+-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   b98bb84..0b4326d  feature-2 -> feature-2
+-
+-git log --oneline
+-0b4326d (HEAD -> feature-2, origin/feature-2) Fix odd number logic
+-b98bb84 Step J complete
+-151efee satisfying requirement change two
+-be302bb Step G complete
+-739c922 Merge branch 'feature-1'
+-86a147d Answer Step F question
+-4ea81e0 (origin/feature-1, feature-1) satisfying requirement one
+-a2dac8c Complete step D
+-a3851e6 setting up gitignore
+-d734ab9 Complete Step C
+-f7d75a9 Add steps A and B
+-1a81e83 Create homework4.txt
+-
+-STEP L:
+-
+-git switch main
+-
+-git merge feature-2
+-[main d20ffe1] Merge branch 'feature-2'
+-hint: Waiting for your editor to close the file...
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 914 bytes | 914.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   f17e6ab..d20ffe1  main -> main
+-
+-git status
+-On branch main
+-Your branch is up to date with 'origin/main'.
+-
+-nothing to commit, working tree clean
+-
+-
+ STEP K:
+ 
+ git switch feature-3
+@@ -473,34 +310,3 @@ remote:   https://github.com/otmanetildi/hmw4_repo.git
+ To https://github.com/Otmanetildi/hmw4_repo.git
+    7c56622..068cfba  feature-3 -> feature-3
+ branch 'feature-3' set up to track 'origin/feature-3'.
+-
+-STEP M:
+-
+-git merge feature-3
+-Auto-merging hmk1/PrintRange.java
+-CONFLICT (content): Merge conflict in hmk1/PrintRange.java
+-Auto-merging hwk4/homework4.txt
+-CONFLICT (content): Merge conflict in hwk4/homework4.txt
+-Automatic merge failed; fix conflicts and then commit the result.
+-
+- nano hmk1/PrintRange.java
+-
+-nano hwk4/homework4.txt
+-
+-git add hmk1/PrintRange.java hwk4/homework4.txt
+-
+-git commit
+-hint: Waitin[main 071c009] Merge branch 'feature-3'
+-
+-git push
+-Enumerating objects: 10, done.
+-Counting objects: 100% (10/10), done.
+-Delta compression using up to 8 threads
+-Compressing objects: 100% (3/3), done.
+-Writing objects: 100% (4/4), 591 bytes | 591.00 KiB/s, done.
+-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+-remote: This repository moved. Please use the new location:
+-remote:   https://github.com/otmanetildi/hmw4_repo.git
+-To https://github.com/Otmanetildi/hmw4_repo.git
+-   2684818..071c009  main -> main
