@@ -1,1 +1,75 @@
-hmw4 answer
+STEP A:
+git config --global user.name "Otmanetildi"
+git config --global user.email "Otmane18fnqouche@gmail.com"
+git config --global core.editor "nano"
+
+git config --global --list
+core.editor=nano
+user.email=Otmane18fnqouche@gmail.com
+user.name=Otmanetildi
+
+STEP B:
+git clone https://github.com/Otmanetildi/hmw4_repo.git
+Cloning into 'hmw4_repo'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+
+Say My Name@mine MINGW64 ~/Desktop
+$ ls
+'Aurélien Géron - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_ Concepts, Tools, and Techniques to Build Intelligent Systems-O'\''Reilly Media (2022).pdf'
+ ML-For-Beginners/
+ MongoDBCompass.lnk*
+'Nmap - Zenmap GUI.lnk'*
+'Otmane Tildi.pdf'
+ Postman.lnk*
+'Project Backups'/
+ TildiCV.pdf
+'Visual Studio Code.lnk'*
+'WhatsApp Image 2024-12-25 at 12.11.42_ed9da122.jpg'
+ ayvalik/
+ desktop.ini
+ diabetes.csv
+ diabetes.png
+ dtdiabetes.ipynb
+ hmw4_repo/
+ ipl.csv
+ jupyter.lnk*
+ jupyterr/
+ kaggle.docx
+'regression ipl data prjct.ipynb'
+ s7/
+ tree_best_model.png
+'~$haimae.pdf'
+
+
+cd hmw4_repo
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
+$ ls
+/hwk4
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
+$ ls -la
+total 16
+drwxr-xr-x 1 Say My Name 197121 0 Jan  1 17:11 ./
+drwxr-xr-x 1 Say My Name 197121 0 Jan  1 17:11 ../
+drwxr-xr-x 1 Say My Name 197121 0 Jan  1 17:11 .git/
+drwxr-xr-x 1 Say My Name 197121 0 Jan  1 17:11 hwk4/
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
+$ ls -la .git
+total 13
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 ./
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 ../
+-rw-r--r-- 1 Say My Name 197121  21 Jan  1 17:11 HEAD
+-rw-r--r-- 1 Say My Name 197121 303 Jan  1 17:11 config
+-rw-r--r-- 1 Say My Name 197121  73 Jan  1 17:11 description
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 hooks/
+-rw-r--r-- 1 Say My Name 197121 182 Jan  1 17:11 index
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 info/
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 logs/
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 objects/
+-rw-r--r-- 1 Say My Name 197121 112 Jan  1 17:11 packed-refs
+drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 refs/
