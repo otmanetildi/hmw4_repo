@@ -273,3 +273,16 @@ Already up to date.
   feature-1
   feature-2
 * main
+
+STEP I:
+
+git switch main
+
+git branch feature-3
+
+git branch
+  feature-1
+  feature-2
+  feature-3
+* main
+
