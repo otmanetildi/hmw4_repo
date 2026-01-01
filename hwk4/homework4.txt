@@ -258,3 +258,18 @@ remote:   https://github.com/otmanetildi/hmw4_repo.git
 To https://github.com/Otmanetildi/hmw4_repo.git
    86a147d..739c922  main -> main
 
+STEP H:
+
+git switch main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+ git pull
+Already up to date.
+
+ git branch feature-2
+
+ git branch
+  feature-1
+  feature-2
+* main
