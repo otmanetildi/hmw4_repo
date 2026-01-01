@@ -73,3 +73,18 @@ drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 logs/
 drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 objects/
 -rw-r--r-- 1 Say My Name 197121 112 Jan  1 17:11 packed-refs
 drwxr-xr-x 1 Say My Name 197121   0 Jan  1 17:11 refs/
+
+STEP C: 
+nano README.md
+
+# Homework 4 – Git and GitHub Practice
+
+This repository is part of a Git workflow assignment.
+It demonstrates configuring Git, cloning repositories, inspecting Git internals,
+using `.gitignore`, and documenting terminal output for grading purposes.
+
+The repository includes a `hwk4` directory containing a detailed log of commands
+and results executed throughout the assignment.
+
+QUESTION (STEP C): Using markdown, how would you put a clickable link to your README.md to the web page of The Department of Software Engineering of Işık University?
+[Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
