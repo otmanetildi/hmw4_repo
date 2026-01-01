@@ -410,3 +410,30 @@ d734ab9 Complete Step C
 f7d75a9 Add steps A and B
 1a81e83 Create homework4.txt
 
+STEP L:
+
+git switch main
+
+git merge feature-2
+[main d20ffe1] Merge branch 'feature-2'
+hint: Waiting for your editor to close the file...
+
+git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 914 bytes | 914.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+To https://github.com/Otmanetildi/hmw4_repo.git
+   f17e6ab..d20ffe1  main -> main
+
+git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
