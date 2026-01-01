@@ -88,3 +88,64 @@ and results executed throughout the assignment.
 
 QUESTION (STEP C): Using markdown, how would you put a clickable link to your README.md to the web page of The Department of Software Engineering of Işık University?
 [Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+STEP D:
+
+nano .gitignore
+
+# Compiled output / build folders
+target/
+build/
+out/
+
+# Java bytecode
+*.class
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+git add .gitignore
+
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+git commit -m "setting up gitignore"
+
+[main a3851e6] setting up gitignore
+ 1 file changed, 22 insertions(+)
+ create mode 100644 .gitignore
+
+git push
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 464 bytes | 464.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+To https://github.com/Otmanetildi/hmw4_repo.git
