@@ -286,3 +286,27 @@ git branch
   feature-3
 * main
 
+
+git push -u origin feature-2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+remote:
+remote: Create a pull request for 'feature-2' on GitHub by visiting:
+remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-2
+remote:
+To https://github.com/Otmanetildi/hmw4_repo.git
+ * [new branch]      feature-2 -> feature-2
+branch 'feature-2' set up to track 'origin/feature-2'.
+
+git push -u origin feature-3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+remote:
+remote: Create a pull request for 'feature-3' on GitHub by visiting:
+remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-3
+remote:
+To https://github.com/Otmanetildi/hmw4_repo.git
+ * [new branch]      feature-3 -> feature-3
+branch 'feature-3' set up to track 'origin/feature-3'.
