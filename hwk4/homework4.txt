@@ -149,3 +149,90 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: This repository moved. Please use the new location:
 remote:   https://github.com/otmanetildi/hmw4_repo.git
 To https://github.com/Otmanetildi/hmw4_repo.git
+
+STEP E:
+
+git branch feature-1
+git switch feature-1
+
+git branch
+* feature-1
+  main
+
+mkdir hmk1
+cd hmk1
+
+pwd
+/c/Users/fujitsu lifebook/Desktop/hmw4_repo/hmk1
+
+ls
+
+
+STEP F:
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$  mv "/c/Users/fujitsu lifebook/Desktop/PrintRange.java" hmk1/
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ ls hmk1
+PrintRange.java
+
+git status
+On branch feature-1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hwk4/homework4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hmk1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ git add hmk1
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ git commit -m "satisfying requirement one"
+[feature-1 4ea81e0] satisfying requirement one
+ 1 file changed, 29 insertions(+)
+ create mode 100644 hmk1/PrintRange.java
+ git push --set-upstream origin feature-1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 655 bytes | 327.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/otmanetildi/hmw4_repo.git
+remote:
+remote: Create a pull request for 'feature-1' on GitHub by visiting:
+remote:      https://github.com/otmanetildi/hmw4_repo/pull/new/feature-1
+remote:
+To https://github.com/Otmanetildi/hmw4_repo.git
+ * [new branch]      feature-1 -> feature-1
+branch 'feature-1' set up to track 'origin/feature-1'.
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ git log --oneline
+4ea81e0 (HEAD -> feature-1, origin/feature-1) satisfying requirement one
+a2dac8c (origin/main, origin/HEAD, main) Complete step D
+a3851e6 setting up gitignore
+d734ab9 Complete Step C
+f7d75a9 Add steps A and B
+1a81e83 Create homework4.txt
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ ls hmk1
+PrintRange.java
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (feature-1)
+$ git switch main
+M       hwk4/homework4.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Say My Name@mine MINGW64 ~/Desktop/hmw4_repo (main)
+$ ls hmk1
+ls: cannot access 'hmk1': No such file or directory
